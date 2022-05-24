@@ -1,0 +1,110 @@
+[{
+    "id": 1,
+    "nombre": "Doritos",
+    "foto": "Assets/img/snack_1.png",
+    "precio": 170,
+    "cantidad": 1
+  }, {
+    "id": 2,
+    "nombre": "Mogul Ext.",
+    "foto": "Assets/img/snack_2.png",
+    "precio": 110,
+    "cantidad": 1
+  }, {
+    "id": 3,
+    "nombre": "Lays Clas.",
+    "foto": "Assets/img/snack_3.png",
+    "precio": 180,
+    "cantidad": 1
+  }, {
+    "id": 4,
+    "nombre": "Cheetos",
+    "foto": "Assets/img/snack_4.png",
+    "precio": 200,
+    "cantidad": 1      
+  }, {
+    "id": 5,
+    "nombre": "3D Snack",
+    "foto": "Assets/img/snack_5.png",
+    "precio": 150,
+    "cantidad": 1      
+  }, {
+    "id": 6,
+    "nombre": "Lays asado",
+    "foto": "Assets/img/snack_6.png",
+    "precio": 210,
+    "cantidad": 1      
+  }, {
+    "id": 7,
+    "nombre": "Lays Q&C",
+    "foto": "Assets/img/snack_7.png",
+    "precio": 210,
+    "cantidad": 1
+  }, {
+    "id": 8,
+    "nombre": "Billiken Gom.",
+    "foto": "Assets/img/snack_8.png",
+    "precio": 120,
+    "cantidad": 1
+  }, {
+    "id": 9,
+    "nombre": "Coca Cola",
+    "foto": "Assets/img/drink_1.png",
+    "precio": 110,
+    "cantidad": 1
+  }, {
+    "id": 10,
+    "nombre": "Sprite",
+    "foto": "Assets/img/drink_2.png",
+    "precio": 110,
+    "cantidad": 1      
+  }, {
+    "id": 11,
+    "nombre": "Fanta",
+    "foto": "Assets/img/drink_3.png",
+    "precio": 110,
+    "cantidad": 1      
+  }, {
+    "id": 12,
+    "nombre": "Pepsi",
+    "foto": "Assets/img/drink_4.png",
+    "precio": 110,
+    "cantidad": 1      
+  }, {
+    "id": 13,
+    "nombre": "Seven up",
+    "foto": "Assets/img/drink_5.png",
+    "precio": 110,
+    "cantidad": 1
+  }, {
+    "id": 14,
+    "nombre": "Pepsi black",
+    "foto": "Assets/img/drink_6.png",
+    "precio": 100,
+    "cantidad": 1
+  }, {
+    "id": 15,
+    "nombre": "Coca zero",
+    "foto": "Assets/img/drink_7.png",
+    "precio": 100,
+    "cantidad": 1      
+  }, {
+    "id": 16,
+    "nombre": "Monster",
+    "foto": "Assets/img/drink_8.png",
+    "precio": 180,
+    "cantidad": 1      
+  }, {
+    "id": 17,
+    "nombre": "Monster",
+    "foto": "Assets/img/drink_9.png",
+    "precio": 200,
+    "cantidad": 1      
+  }, {
+    "id": 18,
+    "nombre": "Monster",
+    "foto": "Assets/img/drink_10.png",
+    "precio": 200,
+    "cantidad": 1
+}]
+

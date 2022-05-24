@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Coder</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="Assets/style/root_variables.css">
+        <link rel="stylesheet" href="Assets/style/cards_style.css">
+        <link rel="stylesheet" href="Assets/style/nav_style.css">
+        <link rel="stylesheet" href="Assets/style/animations.css">
+        <link rel="stylesheet" href="Assets/style/normalize.css">
+        <link rel="stylesheet" href="Assets/style/general_style.css">
+        <!-- ICONS -->
+        <script src="https://kit.fontawesome.com/e5847c8834.js" crossorigin="anonymous"></script>
+        <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    </head>
+    <body>
+        <nav class="nav">
+                <div class="nav__menu">
+                    <ul>
+                        <li class="active list">
+                            <a href="#user" id="user__btn">
+                                <i class="iconify nav__icon" data-icon="lucide:layout-dashboard"></i>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#order" id="user__order">
+                                <i class="iconify nav__icon" data-icon="bx:bx-food-menu"></i>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#payment" id="user__pay">
+                                <i class="iconify nav__icon" data-icon="bi:credit-card-2-back"></i>
+                            </a>
+                        </li>
+                        <div class="slide"></div>
+                    </ul>
+                </div>
+        </nav>
+
+        <div id="user" class="page">
+            <section id="config__section">
+                <div id="config__user">
+                    <div class="form">
+                            <label for="user_name">User name</label>
+							<input type="text" id="Name" name="user_name" required>
+                            <div class="confirm__input">
+                                <p>Modify user</p> 
+                                <img src="Assets/img/add icon.png" id="name__btn" class="add__info ">
+                            </div>
+                            <hr>    
+                            <label for="user_adress">Adress</label>
+							<input type="text" id="Adress" name="user_adress" required>
+                            <div class="confirm__input">
+                                <p>Modify adress</p> 
+                                <img src="Assets/img/add icon.png" id="adress__btn" class="add__info ">
+                            </div>
+                            <hr>
+                            <label id="phone" for="user_number">Phone number</label>
+							<input type="number" id="Number" name="user_number">
+                            <div class="confirm__input">
+                                <p>Modify number</p> 
+                                <img src="Assets/img/add icon.png" id="number__btn" class="add__info ">
+                            </div>
+                            <hr>
+                            <label for="user_mail">E-mail</label>
+							<input type="email" id="Mail" name="user_mail" required>
+                            <div class="confirm__input">
+                                <p>Modify email</p> 
+                                <img src="Assets/img/add icon.png" id="mail__btn" class="add__info ">
+                            </div>
+                            <hr>   
+					</div>
+                </div>
+            </section>
+            <aside class="profile">
+                <h3 class= "profile__title">Profile</h3>
+                <div id="user__info">
+                    <div id="user__data">
+                        <h3>User</h3>
+                        <p id="user__name" class="user_data"></p>
+                        <h3>Adress</h3>
+                        <p id="user__adress" class="user_data"></p>
+                        <h3>Phone number</h3>
+                        <p id="user__number" class="user_data"></p>
+                        <h3>Email</h3>
+                        <p id="user__mail" class="user_data"></p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+       <div id="order" class=" page hide">
+            <section id="menus__section">
+                 <div id="section__products">
+                    <h3 id="menu__title">Products</h3>
+                    <div id="menu__products" class="grid__products">
+                    </div>
+                </div>
+                <hr> 
+            </section>
+
+            <aside class="order">
+                <h3 class="order__title">Current order</h3>
+                <div class="order__adress">
+                    <select class= "adress__selector" name="select" id="shipSelect">
+                        <option value="takeAway" selected>Take away</option>
+                        <option value="delivery">Delivery</option>
+                    </select>
+                </div>
+                <div id="order__queue"></div>
+                <hr>
+                <div class="order__price">
+                    <div class="order__subtotal">
+                        <p>Sub total</p>
+                        <div id="subtotal__price">
+                            <p id="subtotal__ammount">$0</p>
+                        </div>
+                    </div>
+                    <div class="order__fees">
+                        <p>Fees</p>
+                        <p id="fee__price">$0</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="order__total">
+                    <p>Total</p>
+                    <p id="total__ammount">$0</p>
+                </div>
+                <div class="order__checkout">
+                    <div id ="checkout" class="checkout__btn confirm"><p>Checkout</p></div>
+                </div>
+            </aside>
+        </div>
+
+        <div id="payment" class=" page hide">
+            <section id="payment__section">
+                <div id="payment__user">
+                    <h3>Payment configuration</h3>
+                    <div id="paypal" class="methods content">
+                        <div class="paypal__method">
+                            <p>Paypal</p> <img class="selector" src="/Assets/img/selector.png">
+                        </div> 
+                        <div id="content__paypal" class="hide_content">
+                            <div class="connect__btn">
+                                Connect with paypal
+                            </div>  
+                        </div>
+                    </div>
+                    <div id="credit" class="methods content">
+                        <div class="credit__method">
+                            <p>Credit card</p> <img class="selector" src="/Assets/img/selector.png">
+                        </div> 
+                        <div id="content__credit" class="hide_content card__payment">
+                            <p>Add card</p><img class="add_card" src="Assets/img/add icon.png">
+                        </div>
+                    </div>
+                    <div id="debit" class="methods content">
+                        <div class="debit__method">
+                            <p>Debit card</p> <img class="selector" src="/Assets/img/selector.png">
+                        </div> 
+                        <div id="content__debit" class="hide_content card__payment">
+                            <p>Add card</p> <img class="add_card" src="Assets/img/add icon.png">
+                        </div>
+                    </div>
+                    <div id="crypto" class="methods content">
+                        <div class="crypto__method">
+                            <p>Cryptocurrencies</p> <img class="selector" src="/Assets/img/selector.png">
+                        </div> 
+                        <div id="content__crypto" class="hide_content">
+                            <div class="connect__btn">
+                                Connect with metamask
+                            </div>    
+                        </div>
+                    </div>
+                    <hr>
+                </div>    
+            </section>
+            <aside class="profile">
+                <h3>Payment method</h3>
+                <div id="user__methods">
+                    <h3>Choose your method</h3>
+                    <hr>
+                    <form id="radio__form">
+                        <div><input class="radio" type="radio" name="method" value="Paypal"> <p>Paypal</p> </div>
+                        <div><input class="radio" type="radio" name="method" value="Credit card"> <p>Credit card</p> </div>
+                        <div><input class="radio" type="radio" name="method" value="Debit card"> <p>Debit card</p> </div>
+                        <div><input class="radio" type="radio" name="method" value="Cryptocurrency"> <p>Cryptocurrencies</p> </div>  
+                    </form>
+                </div>
+            </aside>
+        </div>
+<!----------------------------------------------- SCRIPTS ----------------------------------------------->
+        <!-- JQuery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Web App scripts -->
+        <script src="Assets/js/global.js"></script>   
+        <script src="Assets/js/objects.js"></script>   
+        <script src="Assets/js/functions.js"></script>   
+        <script src="Assets/js/main.js"></script>
+    </body>
+</html>
+
+
+

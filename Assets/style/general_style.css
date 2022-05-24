@@ -1,0 +1,124 @@
+/* FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Readex+Pro&display=swap');
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* GENERAL */
+*{
+    font-family: var(--inter);
+}
+h1, h2, h3, p, span{
+    color: var(--black);
+}
+body{
+    display: flex;
+    flex-direction: row;
+    /* height: 100vh; */
+    /* justify-content: space-between; */
+    background-color: var(--white);
+    /* overflow: hidden; */
+}
+li{
+    list-style: none;
+}
+select{
+    background: transparent;
+    border: none;
+}
+.iconify{
+    margin: 0 !important;
+}
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--darkGray); 
+    border-radius: 10px;
+  }
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* PRODUCTS MENU */
+#menus__section, #config__section, #payment__section{
+    width: calc(100% - var(--orderCard));
+    padding: var(--menuPadding);
+    background-color: var(--white);
+    overflow-y: scroll;
+    padding: var(--foodPadding);
+    margin-top: 3.125em;
+    margin-right: 1.875em;
+    margin-bottom: 3.125em;
+    height: calc(100vh - 6.25rem);
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* UI CART */
+.order{
+    width: var(--orderCard);
+    height: 100vh;
+    padding: var(--orderPadding);
+    background-color: var(--lightGray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.order__title, .profile__title{
+    font-weight: var(--bold);
+    margin-bottom: 1.375rem;
+}
+.order__adress{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#order__queue{
+    margin: 10px 0 5px 0;
+    height: 250px;
+    padding: 0 5px;
+    overflow-y: scroll;
+    z-index: 998;
+}
+.adress__selector{
+    font-weight: var(--extraBold);
+    font-size: 14px;
+}
+/* CART CHECKOUT */
+.order__price p, #order__total p{
+    color: var(--darkGray);
+    font-weight: var(--extraBold);
+    margin-bottom: 23px;
+}
+.order__subtotal, .order__fees, #order__total{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout__btn{
+    background-color: var(--red);
+    font-weight: var(--extraBold);
+    height: 47px;
+    width: auto;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.checkout__btn p{
+  color: var(--white);  
+}
+#order, #user, #payment{
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw - var(--nav));
+}
+.hide{
+    display: none;
+    visibility: hidden;
+    position: fixed;
+    transform: translateY(-200vh);
+}
+.intro{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow-y: none;
+    z-index: 999999;
+    background-color: var(--hover-red);
+}

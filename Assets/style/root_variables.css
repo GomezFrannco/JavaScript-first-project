@@ -1,0 +1,35 @@
+/* ROOT CSS VARIABLES */
+:root{
+    /* FONT WEIGHT */
+    --medm: 400;
+    --rglr: 500;
+    --semiBold: 600;
+    --bold: 700;
+    --extraBold: 800;
+    /* FONT SIZE */
+    --titles: 24px;
+    --normal: 14px;
+    /* FONT FAMILY */
+    --inter: 'Inter', sans-serif;
+    /* COLORS */
+    --white: #FFFF;
+    --black: #202129;
+    --lightGray: #f1f6fc;
+    --darkGray: #5b5b5b;
+    --gray: #C4C4C4;
+    --red: #f84141;
+    --blue: #415cf8;
+    --darkBlue: #1c2a7e;
+    --green: #41f87e;
+    --darkGreen: #01630c;
+    --hover-red: #d82323;
+    /* PAGE MARGIN & PADDING */
+    --navPadding: 3.125em 0;
+    --orderPadding: 3.125em;
+    --menuPadding: 3.125em 4.375rem;
+    --foodPadding: 0 1.875em 0 3.125em;
+    /* WIDTH */
+    --nav: 6.25em;
+    --orderCard: 370px;
+    --scrollbar: 50px;
+}

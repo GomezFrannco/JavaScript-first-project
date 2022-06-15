@@ -2,7 +2,7 @@
 ![Banner](Assets/img/previews/menu_preview.png)
 
 # Link: 
-* https://gomezfrannco.github.io/JavaScript-first-project/index.html
+* https://gomezfrannco.github.io/JavaScript-first-project/#order
 
 # Descripción
 Web app que simula la compra de productos. Cuenta con tres apartados (ya que funciona como Single Page Application):
